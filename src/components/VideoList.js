@@ -11,10 +11,11 @@ class VideoList extends Component {
     let request = gapi.client.youtube.videos.list({
       chart: 'mostPopular',
       maxResults: 50,
-      part: 'contentDetails,snippet'
+      part: 'contentDetails,snippet,statistics'
     });
 
     request.execute((response) => {
+      console.log(response.items[0]);
       this.setState({ videos: response.items });
     });
   };
