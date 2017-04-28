@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class VideoTeaser extends Component {
   render() {
     return (
-      <div className="teaser col-sm-6"
+      <div className="teaser col-sm-6">
+        <a href="#" onClick={() => { this.props.chooseVideo(this.props.video)} }
            style={{backgroundImage: "url(" + this.props.video.thumbnail + ")" }}>
-        <a href="#" onClick={() => { this.props.chooseVideo(this.props.video)} }>
           <span className="teaser__title">
             {this.props.video.snippet.title}
           </span>

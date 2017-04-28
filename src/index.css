@@ -2,8 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #222;
-  color: #eee;
 }
 
 .navbar {
@@ -43,17 +41,18 @@ body {
 
 .teaser {
   height: 300px;
-  background-size: cover;
-  background-position: center center;
+
 }
 
 .teaser a {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   padding: 15px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .teaser__title {
