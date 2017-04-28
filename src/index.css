@@ -4,27 +4,44 @@ body {
   font-family: sans-serif;
 }
 
-.App {
-  text-align: center;
+.navbar {
+  margin-bottom: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.teaser {
+  min-height: 200px;
+  background-size: cover;
+  position: relative;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.teaser a {
+  color: black;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
 }
 
-.App-intro {
-  font-size: large;
+span.teaser__title {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 15px;
+  bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+span.teaser__meta {
+  display: none;
+}
+
+.teaser a:hover {
+  background: black;
+}
+
+.teaser a:hover span.teaser__meta {
+  display: block;
 }
