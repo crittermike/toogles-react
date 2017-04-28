@@ -15,7 +15,16 @@ class VideoList extends Component {
     });
 
     request.execute((response) => {
-      console.log(response.items[0]);
+      console.log(response.items);
+      response.items.forEach(function(video) {
+        if (video.snippet.thumbnails.standard) {
+          video.thumbnail = video.snippet.thumbnails.standard.url
+        } else if (video.snippet.thumbnails.standard) {
+          video.thumbnail = video.snippet.thumbnails.high.url
+        } else {
+          video.thumbnail = video.snippet.thumbnails.medium.url
+        }
+      });
       this.setState({ videos: response.items });
     });
   };

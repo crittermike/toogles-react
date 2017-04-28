@@ -7,6 +7,7 @@ body {
 }
 
 .navbar {
+  margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -40,14 +41,19 @@ body {
   color: #e51843;
 }
 
-.teaser img {
-  width: 50%;
-  float: left;
-  margin-right: 10px;
+.teaser {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
 }
 
-.teaser {
-  margin-bottom: 40px;
+.teaser a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
 }
 
 .teaser__title {
@@ -55,9 +61,18 @@ body {
   font-weight: bold;
   color: white;
   font-size: 16px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  margin-right: 15px;
 }
 
-.teaser a,
-.teaser span {
+.teaser span.teaser__hide {
+  display: none;
+}
+.teaser a:hover span.teaser__hide {
   display: block;
 }
