@@ -1,0 +1,17 @@
+.searchbox {
+    margin-top: 2px;
+}
+
+.searchbox button,
+.searchbox input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.searchbox button {
+    background: #e51843;
+}
+
+.searchbox button:hover {
+    background: #c4183b;
+}
